@@ -284,6 +284,7 @@ function getWeapons()
   return weapons
 end
 
+
 -----------------------------------------------------------
 -----------------------------------------------------------
 -- Add all the weapons in the xPlayer's loadout
