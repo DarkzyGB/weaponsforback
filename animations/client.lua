@@ -75,21 +75,20 @@ local holstered = true
 
 -- RESTRICTED PEDS --
 -- I've only listed peds that have a remote speaker mic, but any ped listed here will do the animations.
-local skins = {
-	"s_m_y_cop_01",
-	"s_f_y_cop_01",
-	"s_m_y_hwaycop_01",
-	"s_m_y_sheriff_01",
-	"s_f_y_sheriff_01",
-	"s_m_y_ranger_01",
-	"s_f_y_ranger_01",
-	"mp_m_freemode_01",
-}
 
 -- Add/remove weapon hashes here to be added for holster checks.
 local weapons = {
 	"WEAPON_PISTOL",
 	"WEAPON_COMBATPISTOL",
+	"WEAPON_APPISTOL",
+	"WEAPON_VINTAGEPISTOL",
+	"WEAPON_SNSPISTOL",
+	"WEAPON_HEAVYPISTOL",
+	"WEAPON_MARKSMANPISTOL",
+	"WEAPON_STUNGUN",
+	"WEAPON_MACHINEPISTOL",
+	"WEAPON_PISTOL50",
+
 }
 
 -- Holster shit
@@ -153,14 +152,6 @@ end )
 end)
 
 
-function CheckSkin(ped)
-	for i = 1, #skins do
-		if GetHashKey(skins[i]) == GetEntityModel(ped) then
-			return true
-		end
-	end
-	return false
-end
 
 
 function CheckWeapon(ped)
