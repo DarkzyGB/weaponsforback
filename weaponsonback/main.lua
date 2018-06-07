@@ -1,6 +1,7 @@
 -- Love me plz, gimme dev and ill send newds
 -- This is dank, just need to find a way to get a model for attachments :D JUST PUSH DIS ITS FINE!
 local Weapons = {}
+
 -----------------------------------------------------------
 -----------------------------------------------------------
 Citizen.CreateThread(function()
@@ -262,7 +263,7 @@ local weapon_types = {
 function getWeapons()
   local player = GetPlayerPed(-1)
 
-  local ammo_types = {} -- remember ammo type to not duplicate ammo amount
+  local ammo_types = {} -- rem ammo type to not duplicate ammo amount
 
   local weapons = {}
   for k,v in pairs(weapon_types) do
